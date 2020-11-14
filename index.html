@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title id="title">Feedback</title>
+        <title id="page-title">Banana Newsletter</title>
         <meta charset="utf-8">
         <meta name="author" content="Paeniche">
         <link rel="stylesheet" href="main.css">
@@ -11,17 +11,34 @@
         <h1 id="title">Title</h1>
         <p id="description">This is the description</p>
         <form action="" id="survey-form">
-            <label for="name" id="name-label"></label>
-            <input type="text" id="name" required>
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" id="name" required placeholder="Name">
 
-            <label for="email" id="email-label"></label>
-            <input type="email" id="email">
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" id="email" placeholder="Email" required>
 
-            <label for="number" id="number-label"></label>
-            <input type="number" id="number">
+            <label for="number" id="number-label">How many bananas do you have?</label>
+            <input type="number" id="number" min="1" max="999" placeholder="Number of bananas">
             
-            <select name="mostLike" id="dropdown">
+            <p>Do you own a banana tree?</p>
+            <label for="ownTrue">Yes</label>
+            <input type="radio" name="own" id="ownTrue" value="ownTrue">
+            <label for="ownFalse">No</label>
+            <input type="radio" name="own" id="ownFalse" value="ownFalse">
+
+            <label for="dropdown">What is your favorite type of banana?</label>
+            <select name="favoriteType" id="dropdown">
+                <option value="apple">Apple Banana</option>
+                <option value="cavendish">Cavendish</option>
+                <option value="ladyFinger">Lady&apos;s Finger</option>
+                <option value="pisangRaja"> Pisang Raja</option>
+                <option value="red"> Red Banana</option>
+                <option value="plantain">Plantain</option>
             </select>
+
+            
         </form>
+
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </body>
 </html>
