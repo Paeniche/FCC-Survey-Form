@@ -11,32 +11,61 @@
         <h1 id="title">Title</h1>
         <p id="description">This is the description</p>
         <form action="" id="survey-form">
+
+            <div class="form-group">
             <label for="name" id="name-label">Name:</label>
             <input type="text" id="name" required placeholder="Name">
 
-            <label for="email" id="email-label">Email:</label>
-            <input type="email" id="email" placeholder="Email" required>
+            </div>
 
-            <label for="number" id="number-label">How many bananas do you have?</label>
-            <input type="number" id="number" min="1" max="999" placeholder="Number of bananas">
-            
+            <div class="form-group">
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="number" id="number-label">How many bananas do you have?</label>
+                <input type="number" id="number" min="1" max="999" placeholder="Number of bananas">
+            </div>
+
+            <div class="form-group">
             <p>Do you own a banana tree?</p>
-            <label for="ownTrue">Yes</label>
-            <input type="radio" name="own" id="ownTrue" value="ownTrue">
-            <label for="ownFalse">No</label>
-            <input type="radio" name="own" id="ownFalse" value="ownFalse">
+                <label for="ownTrue">Yes</label>
+                <input type="radio" name="own" id="ownTrue" value="ownTrue">
+                <label for="ownFalse">No</label>
+                <input type="radio" name="own" id="ownFalse" value="ownFalse">
+            </div>
 
-            <label for="dropdown">What is your favorite type of banana?</label>
-            <select name="favoriteType" id="dropdown">
-                <option value="apple">Apple Banana</option>
-                <option value="cavendish">Cavendish</option>
-                <option value="ladyFinger">Lady&apos;s Finger</option>
-                <option value="pisangRaja"> Pisang Raja</option>
-                <option value="red"> Red Banana</option>
-                <option value="plantain">Plantain</option>
-            </select>
+            <div class="form-group">
+                <label for="dropdown">What is your favorite type of banana?</label>
+                <select name="favoriteType" id="dropdown">
+                    <option value="apple">Apple Banana</option>
+                    <option value="cavendish">Cavendish</option>
+                    <option value="ladyFinger">Lady&apos;s Finger</option>
+                    <option value="pisangRaja"> Pisang Raja</option>
+                    <option value="red"> Red Banana</option>
+                    <option value="plantain">Plantain</option>
+                </select>
+            </div>
 
+            <div class="form-group">
+                <p>Check all the apply</p>
+                <input type="checkbox" name="tree1" id="tree1" value="tree1">
+                <label for="tree1">I own a banana tree</label>
+                <input type="checkbox" name="tree2" id="tree2" value="tree2">
+                <label for="tree2">I own an apple tree</label>
+                <input type="checkbox" name="tree3" id="tree3" value="tree3">
+                <label for="tree3">I own an avocado tree</label>
+            </div>
             
+            <div class="form-area">
+                <p>If you have anymore thoughts about bananas, please let us know</p>
+                <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" name="submit" id="submit" class="submit-btn">
+            </div>
         </form>
 
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
