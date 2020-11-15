@@ -1,0 +1,15 @@
+.container{
+    margin: auto;
+}
+
+.form-group{
+    display: block;
+}
+
+.submit-btn{
+    background-color: aquamarine;
+}
+
+.text-center{
+    text-align: center;
+}
