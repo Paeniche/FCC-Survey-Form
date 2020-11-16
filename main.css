@@ -4,6 +4,13 @@
     }
 }
 
+body{
+    background-image: url("images/ioana-cristiana-0WW38q7lGZA-unsplash.jpg");
+    background-color: dimgrey;
+    background-position: center;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+}
 
 p{
     margin-bottom: 0;
@@ -19,7 +26,14 @@ footer{
     bottom: 0;
     text-align: center;
     width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
 }
+
+footer a{
+    color: navy;
+}
+
 .input-text, 
 .input-number,
 .input-textarea{
@@ -33,10 +47,13 @@ footer{
     font-family: 'Open Sans', sans-serif;
     padding: 0 20px 10px 10px;
     border-style: solid;
+    background-color: oldlace;
 }
 
 .submit-btn{
-    background-color: aquamarine;
+    background-color: rgb(189, 40, 40);
+    border: none;
+    border-radius: 2%;
 }
 
 .text-center{
