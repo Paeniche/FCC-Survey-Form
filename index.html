@@ -4,40 +4,47 @@
         <title id="page-title">Banana Newsletter</title>
         <meta charset="utf-8">
         <meta name="author" content="Paeniche">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="main.css">
     </head>
     
     <body>
         <div class="container">
             <header>        
-                <h1 id="title" class="text-center">Title</h1>
-                <p id="description" class="text-center">This is the description</p>
+                <h1 id="title" class="text-center">Banana</h1>
+                <p id="description" class="text-center">Please fill out the below questions to help us understand banana demand</p>
             </header>
 
             <form action="" id="survey-form">
 
                 <div class="form-group">
                 <label for="name" id="name-label">Name:</label>
-                <input type="text" id="name" required placeholder="Name">
+                <input class="input-text" type="text" id="name" required placeholder="Name">
 
                 </div>
 
                 <div class="form-group">
                     <label for="email" id="email-label">Email:</label>
-                    <input type="email" id="email" placeholder="Email" required>
+                    <input class="input-text" type="email" id="email" placeholder="Email" required>
                 </div>
 
                 <div class="form-group">
                     <label for="number" id="number-label">How many bananas do you have?</label>
-                    <input type="number" id="number" min="1" max="999" placeholder="Number of bananas">
+                    <input class="input-number" type="number" id="number" min="0" max="999" placeholder="Number of bananas">
                 </div>
 
                 <div class="form-group">
                 <p>Do you own a banana tree?</p>
-                    <label for="ownTrue">Yes</label>
-                    <input type="radio" name="own" id="ownTrue" value="ownTrue">
-                    <label for="ownFalse">No</label>
-                    <input type="radio" name="own" id="ownFalse" value="ownFalse">
+                    <label for="ownTrue">
+                        <input type="radio" name="own" id="ownTrue" value="ownTrue">
+                        Yes
+                    </label>
+
+                    <label for="ownFalse">
+                        <input type="radio" name="own" id="ownFalse" value="ownFalse">
+                        No
+                    </label>
                 </div>
 
                 <div class="form-group">
@@ -54,17 +61,31 @@
 
                 <div class="form-group">
                     <p>Check all the apply</p>
-                    <input type="checkbox" name="tree1" id="tree1" value="tree1">
-                    <label for="tree1">I own a banana tree</label>
-                    <input type="checkbox" name="tree2" id="tree2" value="tree2">
-                    <label for="tree2">I own an apple tree</label>
-                    <input type="checkbox" name="tree3" id="tree3" value="tree3">
-                    <label for="tree3">I own an avocado tree</label>
+                    <label for="tree1">
+                        <input type="checkbox" name="tree1" id="tree1" value="tree1">
+                        I own a banana tree.
+                    </label>
+
+                    <label for="tree2">
+                        <input type="checkbox" name="tree2" id="tree2" value="tree2">
+                        I own an apple tree.
+                    </label>
+                    
+                    <label for="tree3">
+                        <input type="checkbox" name="tree3" id="tree3" value="tree3">
+                        I own an avocado tree.
+                    </label>
+
+                    <label for="tree4">
+                        <input type="checkbox" name="tree4" id="tree4" value="tree4">
+                        I own a different type of tree.
+                    </label>
+                    
                 </div>
                 
                 <div class="form-area">
                     <p>If you have anymore thoughts about bananas, please let us know</p>
-                    <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
+                    <textarea class="input-textarea" name="feedback" id="feedback" cols="30" rows="10"></textarea>
                 </div>
 
                 <div class="form-group">
